@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Soccer Field</title>
+<style>
+    .soccer-field {
+        width: 400px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        position: relative;
+        background-color: green;
+    }
+    .penalty-area {
+        width: 100px; /* Adjust width as needed */
+        height: 60px; /* Adjust height as needed */
+        background-color: white;
+        position: absolute;
+    }
+    .penalty-area.left {
+        left: 0;
+        top: 70px;
+    }
+    .penalty-area.right {
+        right: 0;
+        top: 70px;
+    }
+    .center-circle {
+        width: 100px; /* Adjust diameter as needed */
+        height: 100px; /* Adjust diameter as needed */
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        left: 150px; /* Adjust position as needed */
+        top: 50px; /* Adjust position as needed */
+    }
+    .corner-mark {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .corner-mark.top-left {
+        left: 0;
+        top: 0;
+    }
+    .corner-mark.top-right {
+        right: 0;
+        top: 0;
+    }
+    .corner-mark.bottom-left {
+        left: 0;
+        bottom: 0;
+    }
+    .corner-mark.bottom-right {
+        right: 0;
+        bottom: 0;
+    }
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+    }
+    .line.top {
+        top: 36px;
+    }
+    .line.bottom {
+        bottom: 36px;
+    }
+    .line.center {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .keeper-box {
+        width: 40px; /* Adjust width as needed */
+        height: 80px; /* Adjust height as needed */
+        background-color: white;
+        position: absolute;
+    }
+    .keeper-box.left {
+        left: 0;
+        top: 60px; /* Adjust position as needed */
+    }
+    .keeper-box.right {
+        right: 0;
+        top: 60px; /* Adjust position as needed */
+    }
+</style>
+</head>
+<body>
+
+<div class="soccer-field">
+    <div class="penalty-area left"></div>
+    <div class="penalty-area right"></div>
+    <div class="center-circle"></div>
+    <div class="corner-mark top-left"></div>
+    <div class="corner-mark top-right"></div>
+    <div class="corner-mark bottom-left"></div>
+    <div class="corner-mark bottom-right"></div>
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+    <div class="line center"></div>
+    <div class="keeper-box left"></div>
+    <div class="keeper-box right"></div>
+</div>
+
+</body>
+</html>
